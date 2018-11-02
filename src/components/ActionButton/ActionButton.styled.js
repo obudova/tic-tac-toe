@@ -14,5 +14,6 @@ export default styled.div`
         border-radius: 0 0 0.2rem 0.2rem;
         border: 1px solid #2d2a2d;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
     }
 `
