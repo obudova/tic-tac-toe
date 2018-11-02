@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
 import './App.css';
-import ActionButton from './components/ActionButton'
-import Board from "./components/Board/Board.component";
+import GameHeaderContainer from './GameHeader';
+
+import store from './store/createStore';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-            <ActionButton />
-        </header>
-        <Board />
+        <GameHeaderContainer />
       </div>
     );
   }
 }
 
-export default App;
+const WrappedApp = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+export default WrappedApp;

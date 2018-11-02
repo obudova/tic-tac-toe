@@ -4,7 +4,7 @@ export default styled.div`
     display: flex;
     justify-content: center;
     
-    .text {
+    button {
         position: absolute;
         top: 0;
         padding: 1rem 1.5rem;
