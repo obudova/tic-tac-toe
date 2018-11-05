@@ -5,11 +5,18 @@ class ActionButton extends React.Component {
   isHidden = false;
 
   handleClick = () => {
-    console.log('clicked');
     this.isHidden = true;
     this.forceUpdate();
-    this.props.callback();
+
+    // Todo: figure out how to get rid of timeout :)
+    setTimeout(() => {
+      this.props.callback();
+    }, 900)
   };
+
+  componentWillReceiveProps(nextProps) {
+    this.isHidden = false;
+  }
 
   render() {
     return (

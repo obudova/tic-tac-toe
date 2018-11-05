@@ -1,6 +1,10 @@
 import { connect } from 'react-redux';
 import GameHeader from './GameHeader.component';
-import {startGame} from "../store/actionCreators";
+import {
+  startGame,
+  selectNames,
+  throwDice
+} from "../store/actionCreators";
 
 const mapStateToHeaderProps = (state) => {
   return {
@@ -16,6 +20,13 @@ const mapDispatchHeaderProps = (dispatch) => (
         case 'PRISTINE': {
           dispatch(startGame());
           break;
+        }
+        case 'GAME_STARTED': {
+          dispatch(selectNames());
+          break;
+        }
+        case 'OPONENTS_NAME_SELECTED': {
+          dispatch(throwDice())
         }
         default: {
 

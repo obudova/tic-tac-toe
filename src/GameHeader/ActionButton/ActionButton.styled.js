@@ -7,6 +7,8 @@ export default styled.div`
     button {
         position: absolute;
         top: 0;
+        transform: translateY(0);
+        
         padding: 1rem 1.5rem;
         font-size: 2.4rem;
         background: black;
@@ -15,5 +17,11 @@ export default styled.div`
         border: 1px solid #2d2a2d;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         cursor: pointer;
+        transition: all 300ms ease-in;
+        outline:none
+        
+        &.hide {
+          transform: translateY(-110%);
+        }
     }
 `

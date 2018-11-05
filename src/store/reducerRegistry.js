@@ -4,6 +4,12 @@ function gameStatusReducer(state = 'PRISTINE', action) {
     case 'START_GAME': {
       return 'GAME_STARTED'
     }
+    case 'SELECT_NAMES': {
+      return 'OPONENTS_NAME_SELECTED'
+    }
+    case 'THROW_DICE': {
+      return 'DICE_THROWED'
+    }
     default: {
       return state;
     }

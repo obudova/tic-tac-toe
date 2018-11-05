@@ -3,3 +3,15 @@ export function startGame () {
     type: 'START_GAME'
   }
 }
+
+export function selectNames() {
+  return {
+    type: 'SELECT_NAMES'
+  }
+}
+
+export function throwDice() {
+  return {
+    type: 'THROW_DICE'
+  }
+}
