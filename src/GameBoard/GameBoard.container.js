@@ -27,7 +27,7 @@ const mergeBoardProps = (stateProps, dispatchProps) => (
         user: stateProps.currentUser,
         index: action.index
       }));
-      dispatchProps.dispatch(changeUser());
+      // dispatchProps.dispatch(changeUser());
     },
   }
 );

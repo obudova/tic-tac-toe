@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 
-const EMPTY = -1;
-const PLAYER = 0;
-const OPPONENT = 1;
+import {
+  EMPTY
+} from "../constants";
 
 const emptyBoard = () => (
   Array(9).fill(EMPTY)
