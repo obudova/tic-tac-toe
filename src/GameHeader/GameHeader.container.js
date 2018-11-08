@@ -15,7 +15,6 @@ const mapStateToHeaderProps = (state) => {
 const mapDispatchHeaderProps = (dispatch) => (
   {
     onClick: (statusFrom) => {
-      console.log(statusFrom);
       switch (statusFrom){
         case 'PRISTINE': {
           dispatch(startGame());

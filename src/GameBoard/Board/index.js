@@ -1,1 +1,3 @@
-export { default } from './Board.component';
+import  Board  from './Board.component';
+
+export default Board;

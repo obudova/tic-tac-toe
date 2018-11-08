@@ -15,3 +15,17 @@ export function throwDice() {
     type: 'THROW_DICE'
   }
 }
+
+export function makeTurn(action) {
+  return {
+    type: 'MAKE_TURN',
+    user: action.user,
+    index: action.index
+  }
+}
+
+export function changeUser(action) {
+  return {
+    type: 'TOGGLE_USER'
+  }
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import './App.css';
 import GameHeaderContainer from './GameHeader';
+import GameBoardContainer from './GameBoard';
 
 import store from './store/createStore';
 
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <GameHeaderContainer />
+        <GameBoardContainer />
       </div>
     );
   }
